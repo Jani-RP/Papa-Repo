@@ -93,10 +93,12 @@ async def start_pm(client, message: Message, _):
             )
         return
     out = private_panel(_)
-await message.reply_photo(
-    ...
-    reply_markup=InlineKeyboardMarkup(out),
-)
+    await message.reply_photo(
+        photo=config.START_IMG_URL,
+        caption=_["start_2"].format(message.from_user.mention, nand.mention),
+        reply_markup=InlineKeyboardMarkup(out),
+        effect_id=effect_id,
+    )
     if await is_on_off(2):
         return await nand.send_message(
             chat_id=config.LOGGER_ID,
