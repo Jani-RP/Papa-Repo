@@ -67,12 +67,12 @@ def private_panel(_):
                 style=s[3],
             ),
         ],
-        [
-            InlineKeyboardButton(
-                text=_["S_B_5"],
-                url=f"tg://user?id={config.OWNER_ID}",
-                style=s[4],
-            ),
-        ],
-    ]
+        #[
+            #InlineKeyboardButton(
+                #text=_["S_B_5"],
+               # url=f"tg://user?id={config.OWNER_ID}",
+                #style=s[4],
+            #),
+       # ],
+    #]
     return buttons
