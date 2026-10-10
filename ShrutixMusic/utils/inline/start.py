@@ -74,5 +74,5 @@ def private_panel(_):
                 #style=s[4],
             #),
        # ],
-    #]
+    ]
     return buttons
